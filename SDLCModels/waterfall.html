@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall ehk kosemudel</title>
+</head>
+<body>
+    <h1>kosemudel</h1>
+    <p>
+        waterfall on üks esimesi tarkvara arenduse mudeleid<br>
+        tootmisprotsesside eeskujul, kus iga etapp eeleb järgmisele. tagasipöördumine eelmsisesse<br>
+        on keeruline. Eelnevas etapis vea avastamine, tähendab seda, et vea juurde saab tagasi<br>
+        pöörduda alles siis, kui tarkvara on asutusse läinud.<br><br>
+    </p><br/>
+
+    <h2>kosemudel etapid</h1>
+    <p>
+        Iga etapi tulemusena tekib dokument (kas siis üks või mitu) mis kirjeldab etapis saavutatud tulemit.<br> 
+        kõik dokumendid kinnitatakse. Järgmine etapp ei tohi olla samaaegselt töös kui eelmine pole lõpetatud. <br>
+        Kuigi mingi ülekate siiski on, ning infot on võimalik edastada ühest etapist edasi teise. <br>
+    </p><br/>
+
+    <h3>1. Etapp - Nõuete määratlemine</h1>
+    <p>
+        Selles etaps dokumenteritakse arendatava toote/tarkvara/süsteemi nõuded, käitumine, <br>
+        sihtriistvara jms. mis on arendatava tarkvara taatlusliku funktsiooneerimise tarbeks vajalikud. <br>
+        Vahest jaotatakse see etapp ka omakorda kaheks - süsteemianalüüs ja Nõuete analüüs. <br><br>
+    </p><br/>
+
+    <h3>2. Etapp - süsteemi ja tarkvara kavandamine</h1>
+    <p>
+        Teise etapis kavandatakse arendusel olev süsteem ja tarkvara keskenduds nende põhilistele<br>
+        omadustele. Põhiomadusteks võivad olla: Andmestruktuurid, tarkvara arhitektuur, liidesed,<br>
+        liideste omadused ning protseduurilised ja algoritmilised detailid. Kavandamise tulemused<br>
+        dokumenteritakse mille abil hinnatakse teostuse käigus projekti kvalidteet.<br><br>
+    </p><br/>
+
+    <h3>3. Etapp - Teostus ning modulite testimine</h1>
+    <p>
+        Eelnevalt dokumenteritud kavandi järgi toimub kolmandas etapis tarkvara/süsteemi arendus. <br>
+        Arendustöö käigus arendatakse programm moodulgaval või modulite kogumikuna. Peale<br>
+        programmeerimist teostatakse moduliete ja kogumite testimised. Olenevalt eelnevalt <br>
+        dokumenteeritud kavandi detailsusest tuleneb selles etapis projekti arenduslihtsus.<br>
+        Mida rohkem detaile on kavandatud, seda lihtsam on arendustöö.<br><br>
+    </p><br/>
+
+    <h3>4. Etapp - Integratsioon ja süsteemi testimine</h1>
+    <p>
+        Toimub kogu tarkvarasüsteemi testimine. Peale testimist tarnitakse toode kliendile või<br>
+        kasutajat sihtrühmale. Testitakse sellest vaatepunktist kas süsteem teeb seda mis <br>
+        eelnevalt dokumenteeritud ning testitakse ka seda et süsteemis esinevad detailid on<br>
+        loogilised.<br/><br/>
+    </p><br/>
+
+    <h3>5. Etapp - Kasutamine ja hooldus</h1>
+    <p>
+        Kõige pikem tarkvara elutsükelis olev etapp. Siin toimub vigade parandus, funktsionaalsuse<br/>
+        muutmine, (kas siis kliendi, turu, keskkonna, või sihtrühma sisendi/vajadusena). Arendustöö<br/>
+        teostamiseks korratakse kõiki eelmisi etappe, kuid siis ainult süsteemi muutmise eesmärgil, <br/>
+        mitte enam nullist millegi uue arendamise jaoks.<br/><br/>
+    </p><br/>
+
+    <p>
+        <img src="../Images/waterfall_img.jpg" alt="waterfall model img">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Head</th>
+                    <th>Vead</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>Nõuded on projekti laguses selgelt paigas</td>
+                    <td>nõudeid ei saa muuta projekti käigus</td>
+                </tr>
+                <tr>
+                    <td>valminud toode on 1:1 nõuetele vastav</td>
+                    <td>arendus mudel ei ole paindlik muutatusteks</td>
+                </tr>
+                <tr>
+                    <td>Dokumentatsioon on põhjalik ja täpne, mis aitab tagada projekti järjepidevuse</td>
+                    <td>Liigne dokumentatsioon võib olla ajakulukas ja kergesti muutuvates tingimustes vananenud</td>
+                </tr>
+                <tr>
+                    <td>kulude hindamine on lihtsam, kuna plaaneerimata ootamatusi tekb vähem</td>
+                    <td>nõuete paikapanemine on keerulisem kuna arendamist ei alustatta enne kui plaan on paigas</td>
+                </tr>
+                <tr>
+                    <td>Selge eesmärgiga saavutada lõplik vastuvõtt, kui kõik etapid on lõpule viidud</td>
+                    <td>Pärast projekti lõppemist on klientide ja kasutajate tagasiside saamine keeruline</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Kasutusalad:</h2><br/>
+        <p>
+            Kosemudel sobib kõige paremini suurtele süsteemidele kui seda arendatakse mitmes kohas korraga. Korralik eelnev planeerimine<br/>
+            Aitab eri paikades asuvaid meeskondi paremini kordineerida.
+        </p>
+        <h2>ALLIKAD:</h2>
+        <a href="https://www.sciencedirect.com/topics/computer-science/waterfall-method">computer science waterfall method</a>
+    </body>
+    </html>
+        <a href="../index.html" class="back-button">⬅ Back to Home</a>
+
+        <button onclick="scrollToTop()" class="scroll-top">⬆ Top</button>
+    </p>
+</body>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</html>
