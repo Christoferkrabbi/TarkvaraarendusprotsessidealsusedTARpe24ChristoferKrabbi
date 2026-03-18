@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incremental ehk inkrementaalne arendusmudel</title>
+</head>
+<body>
+    <h1>Prototüüpimis arendusmudel</h1>
+    <p>
+        Prototüüpimis arendusmudelit kasutatakse kui klientidel ei ole kindlat ideed lõpptulemuse kohta, see hõlmab<br>
+        mitmete 'prototüüpide'(e lõpetamata algeliste versioonide) loomist ja nende tagasiside alusel järgmiste<br>
+        prototüüpide loomist
+    </p>
+        <br><br>
+        <h2>kuidas on Prototüüpimise arenduses tegevuste käik</h2><br>
+        <p>
+
+            <h3>1. Nõuete kogumine ja analüüs</h3>
+            Nõuete analüüs on prototüübi mudeli väljatöötamise esimene samm. Selle etapi käigus määratletakse täpselt süsteemi soovid.<br>
+            Meetodi käigus intervjueeritakse süsteemi kasutajaid, et teha kindlaks, mida nad süsteemilt ootavad.
+
+            <h3>2. Kiire algeline disain</h3>
+            Teises etapis luuakse kiire põhidisain, mis ei ole taäielik disain ning näeb uusi muudatusi hiljem. Disain annab kasutajadele<br>
+            kiire ülevaate süsteemist. Ning aitab kaasa prototübi väljatöötamisele
+
+            <h3>3. Prototüübi loomine</h3>
+            Kolmandas etapis luuakse eelnevas etapis loodud kiirdisaine abil tegelik prototüüp, mis on siiski soovitud süsteemi väike algeline mudel
+        
+            <h3>4. Esialgne kasutajate tagasiside</h3>
+            Neljandas etapis esitatakse süsteem kliendile eeltestimiseks. Kliendi tagasiside kogutakse ning edastatakse arendajale
+
+            <h3>5. Prototüübi täiustamine</h3>
+            Kui kasutaja pole paeguse mudleiga rahul, täiustatakse olemasolev mudel vastavalt kliendi nõuetele. (Seda korratakse kuni<br> 
+            saavutatakse kliendile sobiv prototüüp). Kui kasutaja on täiustatud mudeliga rahul, luuakse kinnitatud lõplikul tüübil<br>
+            põhinev lõplik süsteem
+       
+            <h3>6. Toote juurutamine ja haldamine</h3>
+            Lõplik süsteem testiti täielikult ja levitatakse tootmiskeskkonda, kui see oli välja toodtud algse versiooni toetamiseks
+            
+        </p><br><br>
+
+        <h2>Prototüüpimis mudelite tüübid</h2>
+        <p>
+            Prototüüpimismudeleid on nelja tüüpi
+            <h3>1. Kiire ühekordne prototüüpimine</h3>
+            <ul>
+                <li>Pakub kasulikku meetodit ideede uurimiseks ja igaühe kohta klientide tagasiside saamiseks</li>
+                <li>Selle meetodi puhul ei pea väljatöötatud prototüüp tingimata olema osa aktsepteeritud prototüübist</li>
+                <li>Klientide tagasiside aitab vältida tarbetuid disainivigu ja seega on väljatöötatud lõplik prototüüp parema kvaliteediga</li>
+            </ul>
+            <h3>2. Evolutsiooniline prototüüpimine</h3>
+            <ul>
+                <li>See meetod erineb eelnevast, kuna selle puhul täiustatakse algselt väljatöötatud prototüüpi klientide tagasiside põhjal<br>
+                nii kaua kuni see heaks kiidetakse</li>
+                <li>Pakub paremat kvaliteeti võrreldes eelneva tüübiga</li>
+            </ul>
+            <h3>3. Järkjärguline prototüüpimine</h3>
+            <ul>
+                <li>Selle tüübi puhul jagatakse lõpptoode väiksematkes protoüüpideks ja arendatakse individuaalselt</li>
+                <li>Kui kõik osad on korralikult välja töötatud, ühendatakse need lõpptooteks</li>
+                <li>See on tõhus lähenemis viis, sest vähendab arendusprotsessi keerukust</li>
+                <li>Projekti alguse ja lõpliku tarnimise aja vahemik on lühem, kuna kõiki osasid arendatakse ja testitakse samaaegselt</li>
+                <li>Kuid võib juhtuda et osad ei sobi kokku, ning vajavad kogu süsteemi hoolika ja täielikku ülevaadet</li>
+            </ul>
+            <h3>4. Äärmuslike prototüüpimine</h3>
+            <ol>
+                Kasutatakse peamiselt veebiarenduses, koosneb kolmest etapist
+                <li>Esitatakse HTML vormingus põhiline prototüüp koos kõigi lehtedega</li>
+                <li>Luuakse funktsionaalsed ekraanid simuleeritud andmeprotsessidega, kasutades prototüüpteenuse kihti</li>
+                <li>Kõik teenused rakendatatakse ja seostatakse lõpliku prototüübiga</li>
+            </ol>
+        </p>
+
+        <h2>Arendusmudeli head ja vead</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Head küljed</th>
+                    <th>Halvad küljed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>Kliendid saavad algelise ülevaate alguses</td>
+                    <td>Kulukas aja ja raha osas</td>
+                </tr>
+                <tr>
+                    <td>Uute nõuetega on lihtsam kohaneda</td>
+                    <td>halb dokumentatsioon pidevate nõudmiste muutuste tõttu</td>
+                </tr>
+                <tr>
+                    <td>Paindlikus</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table><br><br>
+        <h2>Arendusmudeli joonis</h2>
+        <img src="../images/incremental.png"/>
+        <h2>Inkrementaalne ja iteratiivne</h2><br>
+        <p>
+            kuna inkrementaalne jka iteratiivne arendus on lihtsalt sarnased sõnad, kipuvad nood inimestel saasi minema,<br>
+            aga nad on siiski erinevad asjad:<br>
+            <ul>
+                <li><h3>inkrementaalne arendus</h3> - on tarkvaratoote arendus kus iga inkremendi raames valmid toimiv tarkvara osa.<br>
+                Valmis saadud tarkvara toote osake integreeritakse muu süsteemiga mis eelnevalt arendatud on.</li>
+                <li><h3>Iteratiivne Arendus</h3> - on muutmisstrateegia kus parandatakse või tehakse ringi juba olemasolev süsteem,<br>
+                    et seda siis täiustada, ehk olemasolev süsteem saab uue ja parema vriandi - e iteratsiooni. </li>
+            </ul>
+        </p><br><br>
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html"></a>
+</body>
+</html>
