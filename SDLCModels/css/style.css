@@ -1,0 +1,175 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #2b1e0f;
+    background-image: url("/images/night-sky.jpg");
+}
+
+/* Fixed medieval background */
+.background {
+    background-image: url("https://images.unsplash.com/photo-1526401485004-2aa7a9f6c7b3");
+    background-size: cover;
+    background-attachment: fixed; /* stays in place */
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1b1a17;
+    border-bottom: 3px solid #c9a34e;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #f4e6c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #c9a34e;
+}
+
+/* Main parchment board */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(20, 18, 14, 0.98);
+    color: #f4e6c1;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    border: 3px solid #c9a34e;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #5a3b12;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #c9a34e;
+    padding-bottom: 5px;
+}
+
+/* Quest grid */
+.quests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    padding:30px;
+}
+
+/* Scroll-style cards */
+.scroll-card {
+    background-image: url("/images/parchment.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 200px;
+    min-height: 280px;   /* makes it taller */
+    padding: 20px;
+
+    border: 2px solid #b8964a;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+    transition: transform 0.25s, box-shadow 0.25s;
+
+    color: #2b1e0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scroll-card:hover {
+    transform: translateY(-8px);
+}
+
+#torch-light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* doesn't block clicks */
+    z-index: 999;
+
+    background: radial-gradient(
+        circle 100px at center,
+        rgba(255, 180, 60, 0.20),
+        rgba(255, 140, 40, 0.10) 30%,
+        rgba(0, 0, 0, 0.95) 80%
+    );
+
+    mix-blend-mode: screen;
+}
+
+@keyframes torchFlicker {
+    0% { box-shadow:
+        0 10px 20px rgba(0,0,0,0.7),
+        0 0 20px rgba(255, 170, 50, 0.5); }
+
+    50% { box-shadow:
+        0 10px 20px rgba(0,0,0,0.7),
+        0 0 35px rgba(255, 200, 80, 0.7); }
+
+    100% { box-shadow:
+        0 10px 20px rgba(0,0,0,0.7),
+        0 0 20px rgba(255, 170, 50, 0.5); }
+}
+
+.scroll-card:hover {
+    transform: translateY(-8px);
+    animation: torchFlicker 1.5s infinite;
+}
+.scroll-card h3 {
+    margin-top: 0;
+}
+
+.scroll-card a {
+    color: #5a3b12;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.scroll-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    border-top: 2px solid #c9a34e;
+    padding-top: 20px;
+}
+

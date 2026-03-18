@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chronicles of CK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="torch-light"></div>
+
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#quests">Quests</a></li>
+            <li><a href="#arsenal">Arsenal</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#contact">Raven</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background wrapper -->
+    <div class="background">
+
+        <!-- Main Content Board -->
+        <div class="container">
+
+            <header>
+                <h1>⚔️ Chronicles of CK ⚔️</h1>
+                <p>A developer forging code in the digital realm</p>
+            </header>
+
+            <section id="about">
+                <h2>📜 About the Knight</h2>
+                <p>
+                    Greetings, traveler. I am CK, crafting systems, applications,
+                    and digital realms. <br> See my quest board for completed quests!
+                    
+                </p>
+            </section>
+
+            <section id="quests">
+    <h2>📜 Quest board</h2>
+
+    <div class="quests-grid">
+
+        <div class="scroll-card">
+            <h3>Knights of the Fallen Crown</h3>
+            <p>ASP.NET MVC medieval application.</p>
+            <a href="https://github.com/Christoferkrabbi/KnightsOfTheFallenCrownChristoferKrabbiTarpe232">View Quest</a>
+        </div>
+
+        <div class="scroll-card">
+            <h3>Clone Hero Charts</h3>
+            <p>Custom rhythm game charts.</p>
+            <a href="https://github.com/Christoferkrabbi/Clone-hero-charts-by-LCK">View Quest</a>
+        </div>
+    </div>
+</section>
+
+            <section id="arsenal">
+                <h2>🛠 Arsenal</h2>
+                <ul>
+                    <li>C#</li>
+                    <li>ASP.NET MVC</li>
+                    <li>JavaScript</li>
+                    <li>HTML / CSS</li>
+                    <li>SQL</li>
+                    <li>And a sweet roll...</li>
+                </ul>
+            </section>
+
+            <section id="journey">
+                <h2>Journey</h2>
+                <p>Training to become a full-stack developer and building real systems. But that might also be considered witchcraft...
+                </p>
+            </section>
+
+            <section id="contact">
+                <h2>📬 Send a Raven</h2>
+                <p>GitHub: christoferkrabbi</p>
+                <p>Email: christoferkrabbi@gmail.com</p>
+            </section>
+
+            <footer>
+                <p>"Code with honor. Debug with patience."</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+const torch = document.getElementById("torch-light");
+
+document.addEventListener("mousemove", (e) => {
+    torch.style.background = `
+        radial-gradient(
+            circle 180px at ${e.clientX}px ${e.clientY}px,
+            rgba(255, 200, 80, 0.35),
+            rgba(255, 140, 40, 0.2) 40%,
+            rgba(0, 0, 0, 0.9) 80%
+        )
+    `;
+});
+</script>
+</body>
+</html>
