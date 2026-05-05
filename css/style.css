@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
     padding-top: 80px;
 }
-
 /* Fixed Navbar */
 .navbar {
     position: fixed;
