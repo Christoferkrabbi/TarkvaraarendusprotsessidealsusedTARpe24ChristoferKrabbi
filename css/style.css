@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Georgia, serif;
     color: #2b1e0f;
-    background-image: url("/images/night-sky.jpg");
+    background-image: url("../images/night-sky.jpg");
 }
 
 /* Fixed medieval background */
@@ -52,12 +52,13 @@ body {
 .container {
     max-width: 1000px;
     margin: auto;
-    background: rgba(20, 18, 14, 0.98);
+    background: rgba(29, 20, 2, 0.98);
     color: #f4e6c1;
     padding: 40px;
     box-shadow: 0 0 25px rgba(0,0,0,0.8);
     border: 3px solid #c9a34e;
     text-decoration: none;
+    /* background-image: url(../images/quest-board.jpg) */
 }
 
 /* Header */
@@ -67,7 +68,7 @@ header {
 }
 
 header h1 {
-    color: #5a3b12;
+    color: #a0743b;
 }
 
 /* Sections */
@@ -84,6 +85,11 @@ a{
     color: #f4e6c1;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: #5a3b12;
+}
+
 /* Quest grid */
 .quests-grid {
     display: grid;
@@ -96,7 +102,7 @@ a{
 
 /* Scroll-style cards */
 .scroll-card {
-    background-image: url("/images/parchment.jpg");
+    background-image: url("../images/parchment.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

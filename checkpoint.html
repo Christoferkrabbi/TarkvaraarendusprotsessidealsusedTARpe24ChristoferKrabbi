@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkpoint</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: radial-gradient(circle at center, #1a1915, #0f0e0c);
+    color: #f4e6c1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* MAIN BOX */
+.guard-box {
+    border: 3px solid #c9a34e;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    background: rgba(20,18,14,0.95);
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* TITLE */
+.guard-title {
+    color: #c9a34e;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.guard-text {
+    min-height: 60px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* OPTIONS (Skyrim style) */
+.guard-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.guard-option {
+    padding: 10px;
+    border: 1px solid #c9a34e;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.guard-option:hover {
+    background: #c9a34e;
+    color: #14120e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="guard-box">
+
+    <div class="guard-title">STOP RIGHT THERE!</div>
+
+    <div id="guard-text" class="guard-text"></div>
+
+    <div class="guard-options">
+        <div class="guard-option" onclick="goToSite()">I do have permission.</div>
+        <div class="guard-option" onclick="sweetroll()">I have a sweetroll...</div>
+        <div class="guard-option" onclick="deny()">I am not going anywhere.</div>
+    </div>
+
+</div>
+
+<script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        const text = "Thou shall not pass, you have no permission to enter. Leave.";
+let i = 0;
+
+function type() {
+    if (i < text.length) {
+        document.getElementById("guard-text").innerHTML += text[i];
+        i++;
+        setTimeout(type, 35);
+    }
+}
+
+type();
+    
+        const textEl = document.getElementById("guard-text");
+    
+        function typeText(element, text, speed = 35, callback) {
+            element.innerHTML = "";
+            let i = 0;
+    
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text[i];
+                    i++;
+                    setTimeout(type, speed);
+                } else if (callback) {
+                    callback();
+                }
+            }
+    
+            type();
+        }
+    
+        window.goToSite = function () {
+            typeText(textEl, "Very well then. You may pass.", 35, () => {
+                setTimeout(() => {
+                    window.location.href = "https://github.com/Christoferkrabbi/Clone-hero-charts-by-LCK";
+                }, 800);
+            });
+        };
+    
+        window.sweetroll = function () {
+            typeText(textEl, "Hmm... I’ll let that slide. Move along...", 35, () => {
+                setTimeout(() => {
+                    window.location.href =
+                        "https://github.com/Christoferkrabbi/Clone-hero-charts-by-LCK";
+                }, 1200);
+            });
+        };
+    
+        window.deny = function () {
+            typeText(textEl, "Very well. Then you leave me no choice...", 35);
+            setTimeout(() => {
+                window.location.href =
+                "index.html";
+            }, 1200);
+        };
+    });
+    </script>
+
+</body>
+</html>
