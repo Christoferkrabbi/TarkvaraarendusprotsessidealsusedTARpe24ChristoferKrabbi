@@ -57,6 +57,7 @@ body {
     padding: 40px;
     box-shadow: 0 0 25px rgba(0,0,0,0.8);
     border: 3px solid #c9a34e;
+    text-decoration: none;
 }
 
 /* Header */
@@ -74,9 +75,13 @@ section {
     margin-bottom: 40px;
 }
 
-h2 {
+h2, h3, h4, h5 {
     border-bottom: 2px solid #c9a34e;
     padding-bottom: 5px;
+}
+
+a{
+    color: #f4e6c1;
 }
 
 /* Quest grid */
