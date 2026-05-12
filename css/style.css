@@ -84,9 +84,13 @@ a{
     color: #f4e6c1;
 }
 
+a.link{
+    color: rgb(84, 115, 255)
+}
+
 a:hover {
     text-decoration: underline;
-    color: #5a3b12;
+    color: #fffcf8;
 }
 
 /* Quest grid */
