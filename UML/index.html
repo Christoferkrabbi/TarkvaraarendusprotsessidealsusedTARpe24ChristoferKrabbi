@@ -1,26 +1,121 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christofer Krabbi UML Mapp</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>UML page</title>
 </head>
 <body>
-    <div>
-        <h1>UML</h1>
-        <div>
-            <h2>UML diagrammid</h2>
-                <a href="index.html" target="_blank">Pealeht</a><br>
-                <a href="tehtudtood/UML.html" target="_blank">ERD</a><br>
-                <a href="tehtudtood/Flowchart.html" target="_blank">Flowchart</a><br>          
+    <div id="torch-light"></div>
+        <nav class="navbar">
+           <ul>     
+            <li><a href="../index.html">Back home</a></li>
+        </ul>
+        </nav>
+        
+        <div class="background">
+            <div class="container" >
+                <header>
+                    <h1>UML leht</h1>
+                </header>
+
+                <section>
+                    <h2>Peatükid</h2>
+                    <ul>
+                        <li><a href="#about_uml">Mis on UML?</a></li>
+                        <li><a href="#skeem_lingid">Lingid</a></li>
+                
+                        <li>
+                            <details>
+                                <summary>Diagrammid</summary>
+                                <ul>
+                                    <li><a href="#case_diagram">Case diagramm</a></li>
+                                    <li><a href="#class_diagram">Class diagramm</a></li>
+                                    <li><a href="#sequence_diagram">Sequence diagramm</a></li>
+                                    <li><a href="#state_diagram">State diagramm</a></li>
+                                    <li><a href="#activity_diagram">Activity diagramm</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                
+                        <li><a href="#used_links">Kasutatud materjalid</a></li>
+                    </ul>
+                </section>
+
+                <section id="about_uml">
+                    <h2>Mis on UML?</h2>
+                    
+                    <p>
+                        UML on visuaalne keel, mida kasutatakse tarkvara ja süsteemide kirjeldamiseks,<br>
+                        kavandamiseks visualiseerimiseks ning dokumenteerimiseks. See võimaldab arendajatel<br>
+                        ja analüütikutel kujutada süsteemi ülesehitust ja tööd
+                    </p>
+                </section>
+
+                <section id="skeem_lingid">
+                    <h2>UML ja flowchart lingid:</h2>
+                    <ul>
+                        <li><a href="../Joonised/VooskeemCK2.drawio">ERD joonis</a></li>
+                        <li><a href="../Joonised/vooskeemCK.drawio">flowchart joonis</a></li>
+                    </ul>
+                </section>
+                
+                <section id="case_diagram">
+                    <h2>Case diagramm</h2>
+                    <p>
+                        Case diagramm ehk kasutusjuhtumi diagramm on visuaalne viis näidata, kuidas kasutajad süsteemiga suhtlevad <br>
+                        ja milliseid funktsioone süsteem pakub. See aitab mõista süsteemi käitumist kasutaja vaatenurgast
+                    </p>
+                </section>     
+
+                <section id="class_diagram">
+                    <h2>Class diagramm</h2>
+                    <p>
+                        Klassidiagramm kirjeldab süsteemi struktuuri ning näitab klasse, nende omadusi, meetodeid ja omavahelisi seoseid.<br>
+                        See aitab meeskonnal mõista, kuidas süsteem on korraldatud ja kuidas komponendid omavahel suhtlevad
+                    </p>
+                </section>
+                
+                <section id="sequence_diagram">
+                    <h2>Sequence diagramm</h2>
+                    <p>
+                        Sequence diagramm ehk järjestusdiagramm näitab objektide vahelist suhtlust ajateljel ning kirjeldab tegevuste või sõnumite järjekorda
+                    </p>
+                </section>
+                
+                <section id="state_diagram">
+                    <h2>State diagramm</h2>
+                    <p>
+                        State diagramm ehk Olekudiagramm kuvab objektide olekuid, ning nende vahelisi üleminekuid, näitab kuidas objektide olekud muutuvad erinevatel tulemustel
+                    </p>
+                </section>
+                
+                <section id="activity_diagram">
+                    <h2>Activity diagramm</h2>
+                    <p>
+                        Activity diagramm ehk tegevusdiagramm aitab visualiseerida süsteemi töövooge, protsesse või tegevusi. Need kujutavad, kuidas erinevad toimingud on omavahel seotud ja kuidas süsteem ühest olekust teise liigub
+                    </p>
+                </section>
+
+
+                <section id="used_links">
+                    <h2>Kasutatatud lingid</h2>
+                    <p>
+                        <ul>
+                            <li><a href="https://www.geeksforgeeks.org/system-design/use-case-diagram/" class="link">https://www.geeksforgeeks.org/system-design/use-case-diagram/</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-class-diagrams/" class="link">https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-class-diagrams/</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-sequence-diagrams/" class="link">https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-sequence-diagrams/</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-activity-diagrams/" class="link">https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-activity-diagrams/</a></li>
+                            <li><a href="link" class="link">link</a></li>
+                            <li><a href="link" class="link">link</a></li>
+
+                        </ul>
+                    </p>
+
+                </section>
+            </div>
         </div>
+    <script src="../script/Script.js"></script> 
 </body>
 </html>
-
-<h1>UML</h1>
-<h2> Mis on UML?</h2>
-<p>
-UML (Unified Modeling Language, ühtne mudelikeel) on harustandardiks kujunenud keel tarkvarasüsteemides<br>
-kasutatavate artefaktide spetsifitseerimiseks, visualiseerimiseks, väljatöötamiseks ja dokumenteerimiseks.<br>
-UML pakub valmistusele kindla tugistruktuuri, hõlbustades tarkvaraarenduse protsessi.
-</p>
