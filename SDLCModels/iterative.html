@@ -4,101 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iterative ehk Iteratiivne arendusmudel</title>
-    <link rel="stylesheet" href="../css/SDLCStyles.css">
-    
+    <link rel="stylesheet" href="../css/style.css">  
 </head>
+
 <body>
-    <h1>Iteratiivne arendusmudel</h1><br/>
-    <p>
-        Iteratiivne arendusmudel on SDLC meetod, mille eesmärk on lahendada probleem mille tekitab<br/>
-        tavaline jäikmudel. jäikmudeli (nagu waterfall) rakendamisel ei saa muudatusi teha arenduse teostamise ajal.<br/>
-        Iteratiivsed arendusmudelid aga lubavad seda teha iga iteratsiooni vahel.<br/><br/>
-        Iteratiivne arendusmudel on ise ka kombinatioon iteratiivsest endast ja<br/>
-        Inkrementaalmudelist, seda seetõttu, et ühe iteratsiooni ajal saab kas olemasolevat struktuuri<br/>
-        muuta (uus iteratsioon vanast) või lisada sellele midagi juurede(uus inkrement vanale).<br/>
-    </p><br/><br/>
-    <h2>Kus saab iteratiivset arendusmudelit kasutada</h2><br/>
-    <p>
-        Iteratiivne arendu mudel sobib näiteks, juhul kui klient või lõppkasutaja vajab mõne funktsiooni<br/>
-        teist sugust toimimist, või midagi juurde.<br/>
-        Näide on olemas MMORPG kus mängja saab tappa koletrisi, kuid mängijad soovivad ka teisi<br/>
-        mängjaid tappa. Arendusmeeskond võtab kuulda, ning arendab juurde meetodid ja funktsioonid<br/>
-        koos muude multimeediavaradega selle mängjale võimalikuks muutmiseks.<br/>
-        Tulemuseks on see, et avatakse 1v1 arena.<br/>
-        - Arendusmudel sobib ka sellistel juhtudel kus tingimused arebduseks on üheselt määratud<br/>
-        ning kõigile meeskonna liikmetele selged ja ühiselt arusaadavad.<br/>
-        - Iteratiivne arendusmudel sobib ka olukordades kus on ka turu või konkurentsisurve mingis <br/>
-        tootekategoorias. võib olla kas siis uus arendus lastakse väljsa osalise funktsioonaalsusega<br/>
-        või arendatakse vanale olemasolevale projetile uss osa juurde, samuti osalise funktsioonaalsusega<br/>
-        - Saab kasutada arendusmudelit ka siis kui projekt rakendab uudset meetoodikat või tehnoloogiat<br/>
-        mingisuguse lahenduse arendamiseks, ning mille käigus arendajad paralleelselt ka õpivad<br/>
-        uut tööristu tundma<br/>
-        - Või siis kui projekti eesmärka ajas muutub, algab ühe eesmärgina, kuid <br/>
-        kasutaja testimine näitab hoopis mõne kõrvalise funktsionaalsuse kasualikumat olekut või kasutatakse<br/>
-        toodet eeldatust täielikult teistmoodi. Sellisel juhul saab arendusmeeskond suunata projekti ümber<br/>
-        kasutajate poolt ettenäidatud käitlemise suunas (arendus sihitakse sellele kuidas kasutaja kasutab<br/>
-        mitte kuidas arendajad seda ette nägid)<br/><br/>
-    </p>
-    <h2>Etapid</h2><br/>
-    <p>
-        <h3>Eeluuring</h3>
-        Teostatakse süsteemi tasuvus uuring, et näha kas ja kuidas arendus töö ennast ära tasub. ning selle<br/>
-        järgi otsustakse kuidas arendus töö läbi viiakse ja kas üldse viiakse.
-        <h3>Süsteemi nõude ja analüüs</h3>
-        Kaardistatakse ära mida klient tahab, mida lõppkasutaja tahab, mida selle programmiga teha saab<br/>
-        mis on vaja selle süsteemi toimimiseks (infrastruktuur, riistvara, serverid, teised äpid jne.)<br/>
-        Iteratsioonid alguses kogutakse ka tagasisidet kliendilt ka kasutajatelt ning täpsustatakse ära uued<br/>
-        nõuded kas siis uue osa lisamiseks või vana osa uueks iteratsiooniks.<br/>
-        <h3>Arhitekstuuri projekteerimine ja/või parandamine</h3>
-        Selles etapis öödatakse välja lahendu, mis  on vastavauses nõuetega, või ei ole, siis seda parandatakse<br/>
-        et ta nõuetega vastavusse viia. Et arhitekstuur oleks kooskõlas nõuetest tulenevate tingimustega.<br/>
-        <h3>Arendus/Kodeerimine</h3>
-        Toimub arendus töö, programmeerimise näol, et täita nõuded mis süsteemil vaja.
-        <h3>Testimine</h3>
-        Selles etapis kontrollitakse et eelnevas etapis arendatud toimiks nii, nagu seda nõuetes<br/>
-        sätestatud on.<br/>
-        <h3>Kasutusele võtt/integratsioon</h3>
-        See etapp toimub siis, kui testimine on tõestanud et programm töötab vastavalt nõuetele, ning programm suudab käsitleda <br/>
-        ka mingis ulatuses ootamusi. Kui programm ei ole valmis itegreerimiseks,<br/>
-        korratakse eelmisi etapp, nii kaua kuni ta on. kui programm on valmis, siis toimub integratsioon<br/>
-        muu vajaliku süsteemiga. näiteks: Linuxi distro on valmis ja kasutajale pakutakse<br/>
-        versiooniuuendust. Instalatsioon integreerib uue distro versiooni sinu raudvaraga<br/>
+    <div id="torch-light"></div>
+    <nav class="navbar">
+    <ul>
+        <li><a href="../index.html">Back home</a></li>
+    </ul>
+</nav>
+<div class="background">
+    <div class="container">
+        <header>
+            <h1>Iteratiivne arendusmudel</h1><br/>
+            <p>
+                Iteratiivne arendusmudel on SDLC meetod, mille eesmärk on lahendada probleem mille tekitab<br/>
+                tavaline jäikmudel. jäikmudeli (nagu waterfall) rakendamisel ei saa muudatusi teha arenduse teostamise ajal.<br/>
+                Iteratiivsed arendusmudelid aga lubavad seda teha iga iteratsiooni vahel.<br/><br/>
+                Iteratiivne arendusmudel on ise ka kombinatioon iteratiivsest endast ja<br/>
+                Inkrementaalmudelist, seda seetõttu, et ühe iteratsiooni ajal saab kas olemasolevat struktuuri<br/>
+                muuta (uus iteratsioon vanast) või lisada sellele midagi juurede(uus inkrement vanale).<br/>
+            </p>
+        </header>
+        <h2>Kus saab iteratiivset arendusmudelit kasutada</h2><br/>
+        <p>
+            Iteratiivne arendu mudel sobib näiteks, juhul kui klient või lõppkasutaja vajab mõne funktsiooni<br/>
+            teist sugust toimimist, või midagi juurde.<br/>
+            Näide on olemas MMORPG kus mängja saab tappa koletrisi, kuid mängijad soovivad ka teisi<br/>
+            mängjaid tappa. Arendusmeeskond võtab kuulda, ning arendab juurde meetodid ja funktsioonid<br/>
+            koos muude multimeediavaradega selle mängjale võimalikuks muutmiseks.<br/>
+            Tulemuseks on see, et avatakse 1v1 arena.<br/>
+            - Arendusmudel sobib ka sellistel juhtudel kus tingimused arebduseks on üheselt määratud<br/>
+            ning kõigile meeskonna liikmetele selged ja ühiselt arusaadavad.<br/>
+            - Iteratiivne arendusmudel sobib ka olukordades kus on ka turu või konkurentsisurve mingis <br/>
+            tootekategoorias. võib olla kas siis uus arendus lastakse väljsa osalise funktsioonaalsusega<br/>
+            või arendatakse vanale olemasolevale projetile uss osa juurde, samuti osalise funktsioonaalsusega<br/>
+            - Saab kasutada arendusmudelit ka siis kui projekt rakendab uudset meetoodikat või tehnoloogiat<br/>
+            mingisuguse lahenduse arendamiseks, ning mille käigus arendajad paralleelselt ka õpivad<br/>
+            uut tööristu tundma<br/>
+            - Või siis kui projekti eesmärka ajas muutub, algab ühe eesmärgina, kuid <br/>
+            kasutaja testimine näitab hoopis mõne kõrvalise funktsionaalsuse kasualikumat olekut või kasutatakse<br/>
+            toodet eeldatust täielikult teistmoodi. Sellisel juhul saab arendusmeeskond suunata projekti ümber<br/>
+            kasutajate poolt ettenäidatud käitlemise suunas (arendus sihitakse sellele kuidas kasutaja kasutab<br/>
+            mitte kuidas arendajad seda ette nägid)<br/><br/>
+        </p>
+        <h2>Etapid</h2><br/>
+        <p>
+            <h3>Eeluuring</h3>
+            Teostatakse süsteemi tasuvus uuring, et näha kas ja kuidas arendus töö ennast ära tasub. ning selle<br/>
+            järgi otsustakse kuidas arendus töö läbi viiakse ja kas üldse viiakse.
+            <h3>Süsteemi nõude ja analüüs</h3>
+            Kaardistatakse ära mida klient tahab, mida lõppkasutaja tahab, mida selle programmiga teha saab<br/>
+            mis on vaja selle süsteemi toimimiseks (infrastruktuur, riistvara, serverid, teised äpid jne.)<br/>
+            Iteratsioonid alguses kogutakse ka tagasisidet kliendilt ka kasutajatelt ning täpsustatakse ära uued<br/>
+            nõuded kas siis uue osa lisamiseks või vana osa uueks iteratsiooniks.<br/>
+            <h3>Arhitekstuuri projekteerimine ja/või parandamine</h3>
+            Selles etapis öödatakse välja lahendu, mis  on vastavauses nõuetega, või ei ole, siis seda parandatakse<br/>
+            et ta nõuetega vastavusse viia. Et arhitekstuur oleks kooskõlas nõuetest tulenevate tingimustega.<br/>
+            <h3>Arendus/Kodeerimine</h3>
+            Toimub arendus töö, programmeerimise näol, et täita nõuded mis süsteemil vaja.
+            <h3>Testimine</h3>
+            Selles etapis kontrollitakse et eelnevas etapis arendatud toimiks nii, nagu seda nõuetes<br/>
+            sätestatud on.<br/>
+            <h3>Kasutusele võtt/integratsioon</h3>
+            See etapp toimub siis, kui testimine on tõestanud et programm töötab vastavalt nõuetele, ning programm suudab käsitleda <br/>
+            ka mingis ulatuses ootamusi. Kui programm ei ole valmis itegreerimiseks,<br/>
+            korratakse eelmisi etapp, nii kaua kuni ta on. kui programm on valmis, siis toimub integratsioon<br/>
+            muu vajaliku süsteemiga. näiteks: Linuxi distro on valmis ja kasutajale pakutakse<br/>
+            versiooniuuendust. Instalatsioon integreerib uue distro versiooni sinu raudvaraga<br/>
+        </p><br/><p>
+            <h3>Eeluuring</h3>
+            Teostatakse süsteemi tasuvus uuring, et näha kas ja kuidas arendus töö ennast ära tasub. ning selle<br/>
+            järgi otsustakse kuidas arendus töö läbi viiakse ja kas üldse viiakse.
 
-    </p><br/><p>
-        <h3>Eeluuring</h3>
-        Teostatakse süsteemi tasuvus uuring, et näha kas ja kuidas arendus töö ennast ära tasub. ning selle<br/>
-        järgi otsustakse kuidas arendus töö läbi viiakse ja kas üldse viiakse.
-        <h3>Süsteemi nõude ja analüüs</h3>
-        Kaardistatakse ära mida klient tahab, mida lõppkasutaja tahab, mida selle programmiga teha saab<br/>
-        mis on vaja selle süsteemi toimimiseks (infrastruktuur, riistvara, serverid, teised äpid jne.)<br/>
-        Iteratsioonid alguses kogutakse ka tagasisidet kliendilt ka kasutajatelt ning täpsustatakse ära uued<br/>
-        nõuded kas siis uue osa lisamiseks või vana osa uueks iteratsiooniks.<br/>
-        <h3>Arhitekstuuri projekteerimine ja/või parandamine</h3>
-        Selles etapis öödatakse välja lahendu, mis  on vastavauses nõuetega, või ei ole, siis seda parandatakse<br/>
-        et ta nõuetega vastavusse viia. Et arhitekstuur oleks kooskõlas nõuetest tulenevate tingimustega.<br/>
-        <h3>Arendus/Kodeerimine</h3>
-        Toimub arendus töö, programmeerimise näol, et täita nõuded mis süsteemil vaja.
-        <h3>Testimine</h3>
-        Selles etapis kontrollitakse et eelnevas etapis arendatud toimiks nii, nagu seda nõuetes<br/>
-        sätestatud on.<br/>
-        <h3>Kasutusele võtt/integratsioon</h3>
-        See etapp toimub siis, kui testimine on tõestanud et programm töötab vastavalt nõuetele, ning programm suudab käsitleda <br/>
-        ka mingis ulatuses ootamusi. Kui programm ei ole valmis itegreerimiseks,<br/>
-        korratakse eelmisi etapp, nii kaua kuni ta on. kui programm on valmis, siis toimub integratsioon<br/>
-        muu vajaliku süsteemiga. näiteks: Linuxi distro on valmis ja kasutajale pakutakse<br/>
-        versiooniuuendust. Instalatsioon integreerib uue distro versiooni sinu raudvaraga<br/>
-    </p><br/><br/>
-    <h2>Arendusmudeli joonis</h2>
-    <img src="../images/iterative.png"/>
+            <h3>Süsteemi nõude ja analüüs</h3>
+            Kaardistatakse ära mida klient tahab, mida lõppkasutaja tahab, mida selle programmiga teha saab<br/>
+            mis on vaja selle süsteemi toimimiseks (infrastruktuur, riistvara, serverid, teised äpid jne.)<br/>
+            Iteratsioonid alguses kogutakse ka tagasisidet kliendilt ka kasutajatelt ning täpsustatakse ära uued<br/>
+            nõuded kas siis uue osa lisamiseks või vana osa uueks iteratsiooniks.<br/>
 
-    <h2>Tugevused ja puudujäägid</h2>
-    <table style="border: 1px solid black;">
-        <th>
-            <tr>
-                <td>Tugevus</td>
-                <td>Puudujäägid</td>
-            </tr>
-        </th>
+            <h3>Arhitekstuuri projekteerimine ja/või parandamine</h3>
+            Selles etapis öödatakse välja lahendu, mis  on vastavauses nõuetega, või ei ole, siis seda parandatakse<br/>
+            et ta nõuetega vastavusse viia. Et arhitekstuur oleks kooskõlas nõuetest tulenevate tingimustega.<br/>
+            
+            <h3>Arendus/Kodeerimine</h3>
+            Toimub arendus töö, programmeerimise näol, et täita nõuded mis süsteemil vaja.
+
+            <h3>Testimine</h3>
+            Selles etapis kontrollitakse et eelnevas etapis arendatud toimiks nii, nagu seda nõuetes<br/>
+            sätestatud on.<br/>
+
+            <h3>Kasutusele võtt/integratsioon</h3>
+            See etapp toimub siis, kui testimine on tõestanud et programm töötab vastavalt nõuetele, ning programm suudab käsitleda <br/>
+            ka mingis ulatuses ootamusi. Kui programm ei ole valmis itegreerimiseks,<br/>
+            korratakse eelmisi etapp, nii kaua kuni ta on. kui programm on valmis, siis toimub integratsioon<br/>
+            muu vajaliku süsteemiga. näiteks: Linuxi distro on valmis ja kasutajale pakutakse<br/>
+            versiooniuuendust. Instalatsioon integreerib uue distro versiooni sinu raudvaraga<br/>
+        </p><br/><br/>
+        <h2>Arendusmudeli joonis</h2>
+        <img src="../images/iterative.png"/>
+        <h2>Tugevused ja puudujäägid</h2>
+        <table style="border: 1px solid black;">
+            <th>
+                <tr>
+                    <td>Tugevus</td>
+                    <td>Puudujäägid</td>
+                </tr>
+            </th>
         <tbody>
             <tr>
                 <td>Paindlikkus, mis tagab kiired tlemused. Iteratiivses arenduses<br/>
@@ -158,7 +171,9 @@
                 <td>--</td>
             </tr>
         </tbody>
-    </table>
-    s
+        </table>
+        <script src="../script/Script.js"></script>
+    </div>
+</div>
 </body>
 </html>
