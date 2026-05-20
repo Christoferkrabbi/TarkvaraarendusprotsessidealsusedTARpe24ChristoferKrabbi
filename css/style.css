@@ -1,12 +1,14 @@
-/* Reset */
 body {
     margin: 0;
-    font-family: Georgia, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #2b1e0f;
     background-image: url("../images/night-sky.jpg");
 }
 
-/* Fixed medieval background */
+.medieval{
+    font-family: BlackChancery;
+}
+
 .background {
     background-image: url("https://images.unsplash.com/photo-1526401485004-2aa7a9f6c7b3");
     background-size: cover;
@@ -15,8 +17,8 @@ body {
     min-height: 100vh;
     padding-top: 80px;
 }
-/* Fixed Navbar */
-.navbar {
+
+.navbar { 
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,6 +49,7 @@ body {
     color: #c9a34e;
 }
 
+
 /* Main parchment board */
 .container {
     max-width: 1000px;
@@ -60,7 +63,6 @@ body {
     /* background-image: url(../images/quest-board.jpg) */
 }
 
-/* Header */
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -68,9 +70,28 @@ header {
 
 header h1 {
     color: #a0743b;
+    font-family: Canterbury;
 }
 
-/* Sections */
+@font-face {
+    font-family: 'BlackChancery';
+    src: url('../fonts/BLKCHCRY.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Canterbury';
+    src: url('../fonts/Canterbury.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Wonderland';
+    src: url('../fonts/Beyond\ Wonderland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
 section {
     margin-bottom: 40px;
 }
@@ -78,6 +99,7 @@ section {
 h2, h3, h4, h5 {
     border-bottom: 2px solid #c9a34e;
     padding-bottom: 5px;
+    font-family: BlackChancery;
 }
 
 a{
@@ -111,7 +133,7 @@ a:hover {
     background-repeat: no-repeat;
 
     width: 200px;
-    min-height: 280px;   /* makes it taller */
+    min-height: 280px;
     padding: 20px;
 
     border: 2px solid #b8964a;
@@ -123,6 +145,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: BlackChancery;
 }
 
 .scroll-card:hover {
