@@ -217,3 +217,7 @@ img{
     border-bottom:5px solid #8d7135
 }
 
+/*stupid ahh tbale*/
+th, tr{ border-right: solid 1px #c9a34e; border-bottom: solid 1px #c9a34e;}
+table{ border: solid 1px #c9a34e;}
+td{ border-right: solid 1px #c9a34e;}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        ERD diagrammi leht
+    </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="torch-light"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Back home</a></li>
+        </ul>    
+    </nav>
+
+    <div class="background">
+        <div class="container">
+            <header>
+                <h1>ChangeMainHeader</h1>
+            </header>
+
+            <section>
+                <h2>Peatükid</h2>
+                <ul>
+                    <li><a href="#1">Mis on ERD diagramm?</a></li>
+                    <li><a href="#2">Kus ERD diagramme kasuatakse?</a></li>
+                    <li><a href="#3">page3</a></li>
+                    <li><a href="#viited">Viited ja allikad</a></li>
+                </ul>
+            </section>
+
+            <section id="1">
+                <h2>Mis on ERD diagramm?</h2>
+                <p>
+                    ERD (Entity Relationship Diagram) ehk olemi-suhte diagramm on andmebaaside modelleerimiseks kasutatav diagramm.<br> 
+                    Mille eesmärk on kirjeldada süsteemis olevaid andmeid, nende omadusi ning omavahelisi seoseid enne andmebaasi<br>
+                    loomist.<br> 
+                    ERD diagramm aitab arendajatel ja analüütikutel mõista, milliseid andmeid süsteemis hoitakse ja kuidas need andmed <br>
+                    omavahel seostuvad
+                </p>
+            </section>
+
+            <section id="2">
+                <h2>Kus ERD diagramme kasutatakse?</h2>
+                <p>
+                    ERD diagramme kasutatakse peamiselt:
+                    <ul>
+                        <li>Andmebaaside projekteerimisel</li>
+                        <li>Infosüsteemide analüüsimisel</li>
+                        <li>Tarkvaraarenduses</li>
+                        <li>Ärirakenduste planeerimisel</li>
+                        <li>Süsteemide dokumenteerimisel</li>
+                    </ul><br>
+                    Näiteks:
+                    <ul>
+                        <li>E-poodides</li>
+                        <li>Pankade infosüsteemides</li>
+                        <li>Koolide õppeinfosüsteemides</li>
+                        <li>Haiglate andmebaasides</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section id="3">
+                <h2>Ühenduselemendid ja nende tähendused</h2>
+                <img src="../images/ERD_connectorTypes.jpg" alt="ERDconnectionsImg">
+                <p>
+                    ERD diagrammis kasutatakse ühendusi, mis näitavad, mitu objekti võib olla teise objektiga seotud.
+                    <h3>Üks ühele (1:1)</h3>
+                    <img src="../images/onetoone.png" alt="oneToOne image"><br>
+                    Tähendus:
+                    <ul>
+                        <li> Ühel inimesel on üks pass.</li>
+                        <li>Üks pass kuulub ühele inimesele.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <h3>üks mitmele (1 : N )</h3>
+                    <img src="../images/OneToMany.png" alt="oneToMany image"><br>
+                    Tähendus:
+                    <ul>
+                        <li>Üks õpetaja võib õpetada mitut kursust.</li>
+                        <li>Igal kursusel on üks õpetaja.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <h3>mitu mitmele (M : N)</h3>
+                    <img src="../images/ManyToMany.png" alt="ManyToMany image"><br>
+                    (ERD's kasutatse M ja N ühikuid parlleelselt, mille põhiliseks põhjuseks on see et M ei pruugi olla sama ja võrdeline ühikuga N)<br><br>
+                    Tähendus:
+                    <ul>
+                        <li>Üks õpilane võib osaleda mitmel kursusel.</li>
+                        <li>Ühel kursusel võib olla palju õpilasi.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <!-- seletab lahti mis olemitabelis olema peab ja olla saab -->
+            <section id="4">
+                <h2>Olemitabel</h2>
+                <p>
+                    Olemitabel (Entity Table) kirjeldab ühte objekti andmebaasis.
+                </p>
+                <table>
+                    <thead class="thead">
+                        <tr>
+                            <th>ÕpilaneID</th>
+                            <th>Eesnimi</th>
+                            <th>Perenimi</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Karl</td>
+                            <td>Tamm</td>
+                            <td>karl@email.ee</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <img src="../images/EntityTable.png" alt="EntityTable image">
+
+                <h3>Mis peab olemitabelis olema?</h3>
+                <ul>
+                    <li>Tabeli nimi</li>
+                    <li>Atribuudid (väljad)</li>
+                    <li>Primaarvõti (Primary Key ehk ID)</li>
+                </ul>
+
+                <h3>Mis võib olemitabelis olla?</h3>
+                <ul>
+                    <li>Foreign Key väljad</li>
+                    <li>UNIQUE piirangud</li>
+                    <li>NOT NULL piirangud</li>
+                    <li>Vaikimisi väärtused</li>
+                    <li>Arvutatavad väljad</li>
+                </ul>
+            </section>
+
+            <section id="5">
+                <h2>Võtmed (Keys)</h2>
+                <h3>Mis on Key?</h3>
+                <p>
+                    Key ehk võti on atribuut või atribuutide kogum, mida kasutatakse kirje tuvastamiseks või tabelite ühendamiseks.
+                    Võtmed aitavad tagada andmete korrektsuse ning luua seoseid tabelite vahel.
+                    <h3>Primary Key (PK)</h3>
+
+                    Primary Key ehk primaarvõti on väli, mis identifitseerib iga kirje unikaalselt.<br>
+                    Omadused:
+                    <ul>
+                        <li>Ei tohi korduda</li>
+                        <li>Ei tohi olla tühi (NULL)</li>
+                        <li>Igal tabelil on tavaliselt üks primaarvõti</li>
+                    </ul>
+                    <img src="../images/PrimaryKey.png" alt="primarykey image">
+
+                    <h3>Foreign Key (FK)</h3>
+                    Foreign Key ehk välisvõti viitab teise tabeli primaarvõtmele.<br>
+                    <img src="../images/ForeignKey.png" alt="foreighn key image">
+
+                    <h3>Composite Key</h3>
+                    Composite Key ehk liitvõti koosneb kahest või enamast väljast.<br>
+                    Näide:<br>
+                    <img src="../images/CompositeKey.png" alt="Composite key image">
+
+           
+                </p>
+
+            </section>
+
+            <!-- kirjeldab ära ka mis on Primary Key, Foreign Key, Composite Key, ja lihtsalt Key? -->
+
+
+            <!-- Väljendab kuidas neid koos olemitabelitega kasutatakse -->
+            
+
+            <section id="viited">
+                <h2>Viited ja allikad</h2>
+                <a href="https://www.softwareideas.net/erd-relation-arrows" class="https://www.softwareideas.net/erd-relation-arrows"></a><br>
+                <a href="https://stackoverflow.com/questions/3810064/primary-key-and-er-models" class="https://stackoverflow.com/questions/3810064/primary-key-and-er-models"></a><br>
+                <a href="link" class="link"></a><br>
+            </section>
+        </div>
+    </div>
+    <script src="../../script/Script.js"></script>
+</body>
+</html>
