@@ -25,18 +25,62 @@ body {
     background: #1b1a17;
     border-bottom: 3px solid #c9a34e;
     z-index: 1000;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.navbar ul {
+.nav-item {
+    flex: 1; /* Forces all 3 items to take up equal width */
+  }
+  
+  .nav-item.left {
+    text-align: left;
+  }
+  
+  .nav-item.center {
+    text-align: center; /* Locks the middle link to the dead center */
+  }
+  
+  .nav-item.right {
+    text-align: right;
+  }
+  
+  .navbar ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 15px;
+    
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centers all links as a group on your 5-link page */
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Aligns nicely with your parchment container width */
+    box-sizing: border-box;
 }
 
 .navbar li {
-    margin: 0 20px;
+    margin: 0 25px; /* Adjust this to control how close the links sit together */
+    white-space: nowrap; /* Prevents text links from breaking into two rows */
+}
+
+.navbar ul perfection:has(li:nth-child(3):last-child) {
+    justify-content: space-between;
+}
+.navbar ul:has(li:nth-child(3):last-child) li:nth-child(1) {
+    margin-right: auto; /* Pushes the left link away independently */
+    text-align: left;
+}
+.navbar ul:has(li:nth-child(3):last-child) li:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Locks "Back home" to the dead center of the screen */
+    margin: 0;
+}
+.navbar ul:has(li:nth-child(3):last-child) li:nth-child(3) {
+    margin-left: auto; /* Pushes the right link away independently */
+    text-align: right;
 }
 
 .navbar a {
@@ -221,3 +265,7 @@ img{
 th, tr{ border-right: solid 1px #c9a34e; border-bottom: solid 1px #c9a34e;}
 table{ border: solid 1px #c9a34e;}
 td{ border-right: solid 1px #c9a34e;}
+
+.center{
+    text-align: center;
+}
